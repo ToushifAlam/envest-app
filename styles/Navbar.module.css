@@ -1,0 +1,51 @@
+.navbar {
+    background-color: var(--card-bg);
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.links li {
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--foreground);
+}
+
+.links li:hover {
+    color: var(--accent);
+}
+
+.logo a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.links li a {
+    color: var(--foreground);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.links li a:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
